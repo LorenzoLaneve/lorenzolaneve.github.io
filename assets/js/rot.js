@@ -16,10 +16,8 @@ function linkToEm(s) {
 }
 
 $(document).ready(() => {
-    var ancs = document.querySelectorAll(".em-decrypt");
-    for (k in ancs) {
-        ancs[k].innerText = emDecrypt(emCode);
-        ancs[k].classList.remove("em-decrypt");
-    }
-}
-);
+    $(".em-decrypt").each(function() {
+        $(this).text(emDecrypt(emCode));
+        $(this).removeClass("em-decrypt");
+    });
+});
