@@ -2383,7 +2383,18 @@ ul.posts article header > :last-child {
   width: 100%;
 }
 
-.mini-post .image:hover img {
+.mini-post .image > div {
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -ms-transition: -ms-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-position: center;
+  background-size: 100%;
+}
+
+.mini-post .image:hover img, .mini-post .image:hover > div {
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -2424,7 +2435,7 @@ ul.posts article header > :last-child {
   margin: 0 0 2em 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1680px) {
   .mini-posts {
     display: -moz-flex;
     display: -webkit-flex;
@@ -2444,7 +2455,7 @@ ul.posts article header > :last-child {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 736px) {
   .mini-posts {
     display: block;
     width: 100%;
