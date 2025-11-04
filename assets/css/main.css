@@ -2532,7 +2532,7 @@ ul.posts article header > :last-child {
   white-space: nowrap;
 }
 
-.post > ul {
+.post > ul.entry-list {
   border-top: solid 1px rgba(160, 160, 160, 0.3);
   border-bottom: solid 1px rgba(160, 160, 160, 0.3);
   left: -2em;
@@ -2543,63 +2543,63 @@ ul.posts article header > :last-child {
   list-style: none;
 }
 
-.post > ul > li {
+.post > ul.entry-list > li {
   padding: 0.5em 1em;
   border-bottom: dashed 1px rgba(160, 160, 160, 0.3);
 }
 
-.post > ul > li .publication-title {
+.post > ul.entry-list > li .publication-title {
   font-size: 1.1em;
   font-weight: bold;
   color: #3c3b3b;
 }
 
-.post > ul > li .publication-subtitle {
+.post > ul.entry-list > li .publication-subtitle {
   font-size: 1em;
   color: #646464;
 }
 
-.post > ul > li .publication-subtitle > span.publication-ref {
+.post > ul.entry-list > li .publication-subtitle > span.publication-ref {
   color: #aaaaaa;
 }
 
-.post > ul > li .publication-subtitle > span.publication-ref::before {
+.post > ul.entry-list > li .publication-subtitle > span.publication-ref::before {
   content: "·";
   display: inline-block;
   margin: 0 6px 0 4px;
 }
 
-.post > ul > li .publication-subtitle > span.publication-ref b {
+.post > ul.entry-list > li .publication-subtitle > span.publication-ref b {
   color: #aaaaaa;
 }
 
-.post > ul > li .publication-links {
+.post > ul.entry-list > li .publication-links {
   list-style: none;
   margin: 0;
   padding: 0 0 0 0.5em;
 }
 
-.post > ul > li .publication-links > li {
+.post > ul.entry-list > li .publication-links > li {
   display: inline-block;
   font-size: 0.9em;
   padding-left: 0;
 }
 
-.post > ul > li .publication-links > li a:before {
+.post > ul.entry-list > li .publication-links > li a:before {
   margin-right: 7px;
 }
 
-.post > ul > li .publication-links > li:before {
+.post > ul.entry-list > li .publication-links > li:before {
   content: "·";
   display: inline-block;
   margin: 0 7px 0 5px;
 }
 
-.post > ul > li .publication-links > li:first-child:before {
+.post > ul.entry-list > li .publication-links > li:first-child:before {
   display: none;
 }
 
-.post > ul li:last-child {
+.post > ul.entry-list li:last-child {
   border-bottom: none;
 }
 
@@ -2741,7 +2741,7 @@ ul.posts article header > :last-child {
   .post > header .meta .author img {
     width: 3.5em;
   }
-  .post > ul {
+  .post > ul.entry-list {
     padding: 2.5em 2em 0.1em 2em;
     border-left: 0;
   }
@@ -2762,7 +2762,7 @@ ul.posts article header > :last-child {
   .post > header .title h2 {
     font-size: 1.1em;
   }
-  .post > ul {
+  .post > ul.entry-list {
     padding: 1.5em 1.5em 0.1em 1.5em;
     left: -1.5em;
     margin: 0 0 1.5em 0;
