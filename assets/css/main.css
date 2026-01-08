@@ -2819,6 +2819,36 @@ ul.posts article header > :last-child {
   aspect-ratio: 16/9;
 }
 
+.post ul.todo-list {
+  padding-left: 5px;
+}
+
+.post ul.todo-list li {
+  padding-left: 0;
+  list-style: none;
+}
+
+.post ul.todo-list li .fa {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  color: #aaaaaa;
+}
+
+.post ul.todo-list li .fa::before {
+  content: "\f0c8";
+}
+
+.post ul.todo-list li.completed .fa {
+  color: #7fb800;
+}
+
+.post ul.todo-list li.completed .fa::before {
+  content: "\f14a";
+}
+
 /* Section/Article */
 section.special, article.special {
   text-align: center;
